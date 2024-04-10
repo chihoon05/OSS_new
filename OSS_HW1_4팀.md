@@ -47,6 +47,7 @@ Histogram filter는 위치추정을 위해 RFID의 속도 입력 및 범위 관�
 랜드마크 위치를 나눠진 연속공간에서 가우시안으로 나타냅니다.
 4개의 랜드마크와 해상도를 사용해 격자 지도의 크기를 설정해주고 첫번째 셀에 가장 가까운 랜드마크의 거리를 구합니다.
 이 함수는 랜드마크와 가장 가까운 셀일수록 높은 확률값을 가지게 됩니다.
+![animation](https://github.com/chihoon05/OSS_new/assets/166050709/755130a8-57b8-49e1-b591-4c1fe9c61c28)
 
 
 # 3) SLAM (동시 위치추정 및 도표화, Simultaneous Localization And Mapping)
