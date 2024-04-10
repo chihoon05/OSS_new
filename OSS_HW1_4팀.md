@@ -26,14 +26,14 @@ PythonRobotics는 로봇 공학에서 사용되는 다양한 알고리즘을 Pyt
 # 3. 주요기능
 # 1) Localization (위치추정)
 
-# Extended Kalman Filter Localization(확장 칼만 필터 위치추정, EKF Localization)- [사진첨부]
+# Extended Kalman Filter Localization(확장 칼만 필터 위치추정, EKF Localization)
 EKF(Extended Kalman Filter)를 사용한 센서 융합 위치추정입니다.
 파란색 선은 실제 궤적, 검은색 선은 추측 궤적, 녹색 점은 위치 관측(예: GPS), 빨간색 선은 EKF로 추정된(추측된) 궤적입니다.
 +) Kalman Filter with Speed Scale Factor Correction- [사진첨부]
 속도 보정이 있는 확장 칼만 필터(EKF) 위치추정입니다.
 이는 휠 마모와 같은 요인으로 인한 축적 계수 오류로 측정된 로봇의 속도를 수정하기 위한 것 입니다.
 
-# Histogram filter localization(히스토그램 필터 위치추정)- [사진첨부]
+# Histogram filter localization(히스토그램 필터 위치추정)
 Histogram filter를 사용한 2D 위치추정 예시입니다.
 빨간색 X 표시는 실제 위치, 검은 점은 RFID 위치, 파란색 격자는 히스토그램 필터의 위치 확률을 나타냅니다.
 이 시뮬레이션에서는, 로봇의 yaw 방향과 RFID의 위치는 알려져 있지만 x,y 위치는 알려져 있지 않다고 가정합니다.
@@ -44,7 +44,7 @@ Histogram filter는 위치추정을 위해 RFID의 속도 입력 및 범위 관�
 
 
 
-# 3) SLAM (동시 위치추정 및 도표화, Simultaneous Localization And Mapping) - [사진첨부]
+# 3) SLAM (동시 위치추정 및 도표화, Simultaneous Localization And Mapping)
 
 # Iterative Closest Point (ICP) Matching (반복적 최단거리 지점 찾기)
 특이값 분해가 있는 2D ICP 매칭 예시이고, 회전 행렬, 점과 점 사이의 변환벡터를 계산할 수 있습니다.
@@ -64,7 +64,7 @@ SLAM을 로봇에 적용한다면, 현재 시간동안 자신의 위치를 계�
 
 # 4) Path Planning (경로 계획)
 
-# 동적 창 접근 방식(DWA) - [사진첨부]
+# 동적 창 접근 방식(DWA)
 1.실시간 경로 계획
 DWA는 로봇의 센서로부터 실시간으로 받아오는 환경 정보를 사용하여 경로를 계산합니다. 이를 통해 로봇이 동적인 환경에서도 안전하게 이동할 수 있도록 합니다.
 2.제약 조건 고려
@@ -72,7 +72,7 @@ DWA는 로봇의 속도,가속도,방향 제약 등을 고려하여 경로를 �
 3.경로 최적화:
 DWA는 경로 거리, 이동 시간,에너지 소비 등을 고려하여 최적의 경로를 계획합니다. 이를 통해 로봇의 성능을 향상시키고 운영 비용을 줄일 수 있도록 합니다.
 
-# Pythonrobotics A알고리즘 - [사진 첨부]
+# Pythonrobotics A알고리즘
 1.최적 경로 찾기
 A알고리즘은 시작 지점에서 목표 지점까지 최적의 경로를 찾도록 설계되었습니다. 이는 경로거리, 이동 시간, 에너지 소비 등을 고려하여 가장 효율적인 경로를 계산합니다.
 
@@ -80,7 +80,7 @@ A알고리즘은 시작 지점에서 목표 지점까지 최적의 경로를 찾
 A알고리즘은 휴리스틱 함수를 사용하여 검색 공간을 효율적으로 탐색합니다. 휴리스틱 함수는 목표 지점까지의 거리를 추정하여,알고리즘이 더 빠르게 최적의 경로를 찾도록 도와줍니다.
 
 
-# 5) Path Tracking (경로 추적) - [사진 첨부]
+# 5) Path Tracking (경로 추적)
 
 # Pure pursuit tracking(경로 추적 알고리즘)
 이 알고리즘은 로봇을 현재 위치에서 전방의 전방 주시 지점(Look-Ahead Point)에 도달하도록 이동시키는 각속도 명령을 계산합니다.
@@ -92,7 +92,7 @@ A알고리즘은 휴리스틱 함수를 사용하여 검색 공간을 효율적�
 
 
 
-# 6) Arm Navigation (로봇 팔) - [사진 첨부]
+# 6) Arm Navigation (로봇 팔)
 대화형 시뮬레이션으로 포인트 제어 시뮬레이션에 대한 두 개의 관절 팔을 의미합니다.
 이는 플롯 영역을 왼쪽 클릭하여 effector의 목표 위치를 설정할 수 있습니다.
 사용자가 원하는 곳으로 가는 조인트 각도를 결정해야 합니다.
