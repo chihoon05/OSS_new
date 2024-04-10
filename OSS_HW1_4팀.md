@@ -51,11 +51,15 @@ Histogram filter는 위치추정을 위해 RFID의 속도 입력 및 범위 관�
 정확한 대응관계를 알고 있다면, 상대회전 또는 변환을 닫힌 형태로 정확히 계산할 수 있습니다.
 ICP는 스캔한 것들 사이의 변위를 계산하는 강력한 알고리즘입니다. 주요 문제는 올바른 데이터의 연관성을 결정하는 것입니다. 
 올바른 데이터 연관성이 주어지면 특이값 분해를 사용하여 변환을 효율적으로 계산할 수 있습니다.
+![Iterative Closest Point (ICP) Matching](https://github.com/chihoon05/OSS_new/assets/165778887/88872fe4-52ed-4560-8c83-28292451cdd5)
+
 
 # Fast SLAM 1.0
 파란선은 실측 자료이고, 검은선은 신호가 없는 동안 추측한 것, 빨간선은 FastSLAM을 이용하여 추정한 궤적입니다.
 빨간점은 FastSLAM의 입자들이고, 검은점은 지표, 파란 십자가는 FastSLAM 으로 추정된 지표 위치입니다.
 SLAM을 로봇에 적용한다면, 현재 시간동안 자신의 위치를 계측 또는 측정하면서 동시에 주변환경의 지도를 작성할 수 있습니다.
+![FastSLAM 1 0](https://github.com/chihoon05/OSS_new/assets/165778887/1114ebc9-2123-41e3-9d0b-7397d423e847)
+
 
 
 4) Path Planning (경로 계획)
