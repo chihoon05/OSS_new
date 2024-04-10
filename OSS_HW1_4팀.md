@@ -50,11 +50,10 @@ Histogram filter는 위치추정을 위해 RFID의 속도 입력 및 범위 관�
 ![animation](https://github.com/chihoon05/OSS_new/assets/166050709/755130a8-57b8-49e1-b591-4c1fe9c61c28)
 
 # Object shape recognition using circle fitting (원 피팅을 이용한 물체 형상 인식)
-![animation](https://github.com/chihoon05/OSS_new/assets/166050709/92bfe182-519c-453b-89ae-6e7ca6492e83)
 원 피팅을 이용한 물체 형상 인식 그래프입니다.
 파란색 원은 실체 개체 모양이고 빨간색 십자가는 거리 측정 센서의 관측치입니다.
 빨간색 원은 원 피팅을 사용하여 추정된 물체의 모양입니다.
-
+![animation](https://github.com/chihoon05/OSS_new/assets/166050709/92bfe182-519c-453b-89ae-6e7ca6492e83)
 
 
 # 3) SLAM (동시 위치추정 및 도표화, Simultaneous Localization And Mapping)
