@@ -30,6 +30,8 @@ PythonRobotics는 로봇 공학에서 사용되는 다양한 알고리즘을 Pyt
 # Extended Kalman Filter Localization(확장 칼만 필터 위치추정, EKF Localization)
 EKF(Extended Kalman Filter)를 사용한 센서 융합 위치추정입니다.
 파란색 선은 실제 궤적, 검은색 선은 추측 궤적, 녹색 점은 위치 관측(예: GPS), 빨간색 선은 EKF로 추정된(추측된) 궤적입니다.
+<img width="590" alt="Extended Kalman Filter Localization" src="https://github.com/chihoon05/OSS_new/assets/166033329/e985b377-d99c-4a8d-9544-340415883589">
+
 +) Kalman Filter with Speed Scale Factor Correction
 속도 보정이 있는 확장 칼만 필터(EKF) 위치추정입니다.
 이는 휠 마모와 같은 요인으로 인한 축적 계수 오류로 측정된 로봇의 속도를 수정하기 위한 것 입니다.
