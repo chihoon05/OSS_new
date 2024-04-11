@@ -229,5 +229,6 @@ joint까지의 거리는 피타고라스 정리를 사용하여 이펙터 위치
 임의의 수의 장애물로 복잡한 궤적을 처리할 수 있어야 합니다.
 
 로봇 궤적은 Algorism의 입력 역할을 하며, 이족 보행 플래너(Bipedal Planner)는 경로를 따라 각 단계에 대한 발의 위치와 방향을 출력합니다.
+![Bipedal Planner](https://github.com/chihoon05/OSS_new/assets/166033329/e0f62b0b-b044-40b9-9d06-6edff5715478)
 
     
