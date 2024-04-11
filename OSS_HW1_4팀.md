@@ -45,6 +45,7 @@ Histogram filter는 위치추정을 위해 RFID의 속도 입력 및 범위 관�
 ![Histogram filter localization](https://github.com/chihoon05/OSS_new/assets/166033329/e383c4d1-a37a-4abd-bc49-34d8b5bdc15c)
 
 히스토그램 필터가 확률 분포를 추정하는 데는 총 Four Steps, 4단계로 구성됩니다. 
+
 [Step1: 필터 초기화]
 - 히스토그램 필터는 초기 위치 정보가 필요하지 않습니다.
 그 경우, 각 grid probability을 동일한 값으로 초기화할 수 있습니다.
