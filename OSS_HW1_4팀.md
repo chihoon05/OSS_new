@@ -31,7 +31,6 @@ PythonRobotics는 로봇 공학에서 사용되는 다양한 알고리즘을 Pyt
 EKF(Extended Kalman Filter)를 사용한 센서 융합 위치추정입니다.
 파란색 선은 실제 궤적, 검은색 선은 추측 궤적, 녹색 점은 위치 관측(예: GPS), 빨간색 선은 EKF로 추정된(추측된) 궤적입니다.
 <img width="590" alt="Extended Kalman Filter Localization" src="https://github.com/chihoon05/OSS_new/assets/166033329/e985b377-d99c-4a8d-9544-340415883589">
-![image](https://github.com/chihoon05/OSS_new/assets/166033329/bbc16643-a0e9-47e8-9bd7-6c565ac3ad93)
 
 +) Kalman Filter with Speed Scale Factor Correction
 속도 보정이 있는 확장 칼만 필터(EKF) 위치추정입니다.
@@ -229,6 +228,7 @@ joint까지의 거리는 피타고라스 정리를 사용하여 이펙터 위치
 임의의 수의 장애물로 복잡한 궤적을 처리할 수 있어야 합니다.
 
 로봇 궤적은 Algorism의 입력 역할을 하며, 이족 보행 플래너(Bipedal Planner)는 경로를 따라 각 단계에 대한 발의 위치와 방향을 출력합니다.
-![Bipedal Planner](https://github.com/chihoon05/OSS_new/assets/166033329/e0f62b0b-b044-40b9-9d06-6edff5715478)
+![Bipedal Planner](https://github.com/chihoon05/OSS_new/assets/166033329/d8f89907-85ca-4b83-8bca-2702f445795e)
+
 
     
