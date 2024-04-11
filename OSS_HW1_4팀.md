@@ -31,16 +31,19 @@ PythonRobotics는 로봇 공학에서 사용되는 다양한 알고리즘을 Pyt
 EKF(Extended Kalman Filter)를 사용한 센서 융합 위치추정입니다.
 파란색 선은 실제 궤적, 검은색 선은 추측 궤적, 녹색 점은 위치 관측(예: GPS), 빨간색 선은 EKF로 추정된(추측된) 궤적입니다.
 <img width="590" alt="Extended Kalman Filter Localization" src="https://github.com/chihoon05/OSS_new/assets/166033329/e985b377-d99c-4a8d-9544-340415883589">
+![image](https://github.com/chihoon05/OSS_new/assets/166033329/bbc16643-a0e9-47e8-9bd7-6c565ac3ad93)
 
 +) Kalman Filter with Speed Scale Factor Correction
 속도 보정이 있는 확장 칼만 필터(EKF) 위치추정입니다.
 이는 휠 마모와 같은 요인으로 인한 축적 계수 오류로 측정된 로봇의 속도를 수정하기 위한 것 입니다.
+![Kalman Filter with Speed Scale Factor Correction](https://github.com/chihoon05/OSS_new/assets/166033329/49967150-58b9-4d0b-b92e-b70539802ffb)
 
 # Histogram filter localization(히스토그램 필터 위치추정)
 Histogram filter를 사용한 2D 위치추정 예시입니다.
 빨간색 X 표시는 실제 위치, 검은 점은 RFID 위치, 파란색 격자는 히스토그램 필터의 위치 확률을 나타냅니다.
 이 시뮬레이션에서는, 로봇의 yaw 방향과 RFID의 위치는 알려져 있지만 x,y 위치는 알려져 있지 않다고 가정합니다.
 Histogram filter는 위치추정을 위해 RFID의 속도 입력 및 범위 관찰을 사용합니다.
+![Histogram filter localization](https://github.com/chihoon05/OSS_new/assets/166033329/e383c4d1-a37a-4abd-bc49-34d8b5bdc15c)
 
 히스토그램 필터가 확률 분포를 추정하는 데는 총 Four Steps, 4단계로 구성됩니다. 
 [Step1: 필터 초기화]
@@ -48,10 +51,14 @@ Histogram filter는 위치추정을 위해 RFID의 속도 입력 및 범위 관�
 그 경우, 각 grid probability을 동일한 값으로 초기화할 수 있습니다.
 [Step2: 움직임에 의한 확률 예측]
 - 히스토그램 필터에서 로봇이 다음 grid(그리드)에서 모든 확률 정보가 이동 방향으로 이동됩니다.
+<img width="320" alt="Histogram filter localization  step2" src="https://github.com/chihoon05/OSS_new/assets/166033329/92e6c2d6-14cf-49e1-a238-ed8623d5df61">
+
 이 과정은 로봇 이동으로, 확률 분포를 나타냅니다.
 [Step3: 관측에 의한 확률 업데이트]
 - 이것은 bayesian filter의 업데이트 단계입니다.
 확률 업데이트 공식은 사용 센서 모델에 의해 달라집니다.
+<img width="320" alt="Histogram filter localization  step3" src="https://github.com/chihoon05/OSS_new/assets/166033329/c3dc73f6-9d63-455c-927c-a20533cad980">
+
 [Step4: 확률로부터 위치 추정]
 - 각 단계에서, 현재 확률 분포에서 최종 로봇 위치를 계산할 수 있습니다. 최종 위치를 계산하려면 두 가지 방법이 있습니다.
 (1) 최대 확률 그리드 위치를 사용합니다.
