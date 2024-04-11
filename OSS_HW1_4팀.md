@@ -48,11 +48,12 @@ Histogram filter는 위치추정을 위해 RFID의 속도 입력 및 범위 관�
 [Step1: 필터 초기화]
 - 히스토그램 필터는 초기 위치 정보가 필요하지 않습니다.
 그 경우, 각 grid probability을 동일한 값으로 초기화할 수 있습니다.
+
 [Step2: 움직임에 의한 확률 예측]
 - 히스토그램 필터에서 로봇이 다음 grid(그리드)에서 모든 확률 정보가 이동 방향으로 이동됩니다.
+- 이 과정은 로봇 이동으로, 확률 분포를 나타냅니다.
 <img width="320" alt="Histogram filter localization  step2" src="https://github.com/chihoon05/OSS_new/assets/166033329/92e6c2d6-14cf-49e1-a238-ed8623d5df61">
 
-이 과정은 로봇 이동으로, 확률 분포를 나타냅니다.
 [Step3: 관측에 의한 확률 업데이트]
 - 이것은 bayesian filter의 업데이트 단계입니다.
 확률 업데이트 공식은 사용 센서 모델에 의해 달라집니다.
