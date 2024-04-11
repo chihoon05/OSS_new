@@ -65,6 +65,18 @@ Histogram filter는 위치추정을 위해 RFID의 속도 입력 및 범위 관�
 이 함수는 랜드마크와 가장 가까운 셀일수록 높은 확률값을 가지게 됩니다.
 ![animation](https://github.com/chihoon05/OSS_new/assets/166050709/755130a8-57b8-49e1-b591-4c1fe9c61c28)
 
+# Normal Distance Transform (NDT) map (정규 분포 변환 맵)
+정규 분포 변환(NDT)은 관측점 모델링을 위해 정규 분포를 사용하여 지도를 표현합니다.
+
+- 새로운 관찰이 생깁니다.
+  ![raw_observations](https://github.com/chihoon05/OSS_new/assets/166050709/de0c0f87-6845-42d1-98ab-3873a3cd4087)
+- 그리드 기반 클러스터링 알고리즘을 사용하여 관측점을 군집화합니다.
+  ![grid_clustering](https://github.com/chihoon05/OSS_new/assets/166050709/bc4a9300-97e3-4a3c-bf8a-0c4695425f65)
+- 각 그리드 클러스터에 정규 분포를 적합시킵니다.
+  ![ndt_map1](https://github.com/chihoon05/OSS_new/assets/166050709/d8379009-2a6e-48b5-8c49-38bea2eda8a6)
+- 검은색 타원은 각 NDT 그리드를 다음과 같이 표시합니다.
+  ![ndt_map2](https://github.com/chihoon05/OSS_new/assets/166050709/2a20392f-c7da-4edf-94be-656fce140c00)
+
 # Point cloud Sampling (포인트 클라우드 샘플링)
 포인트 클라우드는 2차원 및 3차원 기반 데이터로 LIDAR, 카메라 등과 같은 외부 센서에 의해 획득됩니다.
 일반적으로 포인트 클라우드 데이터는 데이터 수가 매우 많아 모든 데이터를 처리하면 시간이 오래 걸립니다.
