@@ -68,7 +68,8 @@ Histogram filter는 위치추정을 위해 RFID의 속도 입력 및 범위 관�
 # Normal Distance Transform (NDT) map (정규 분포 변환 맵)
 정규 분포 변환(NDT)은 관측점 모델링을 위해 정규 분포를 사용하여 지도를 표현합니다.
 - 새로운 관찰이 생깁니다.
-  ![raw_observations](https://github.com/chihoon05/OSS_new/assets/166050709/de0c0f87-6845-42d1-98ab-3873a3cd4087)
+
+   ![raw_observations](https://github.com/chihoon05/OSS_new/assets/166050709/de0c0f87-6845-42d1-98ab-3873a3cd4087)
 - 그리드 기반 클러스터링 알고리즘을 사용하여 관측점을 군집화합니다.
   ![grid_clustering](https://github.com/chihoon05/OSS_new/assets/166050709/bc4a9300-97e3-4a3c-bf8a-0c4695425f65)
 - 각 그리드 클러스터에 정규 분포를 적합시킵니다.
