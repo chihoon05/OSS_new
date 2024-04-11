@@ -94,6 +94,7 @@ Histogram filter는 위치추정을 위해 RFID의 속도 입력 및 범위 관�
 
 # Object shape recognition using rectangle fitting (직사각형 피팅을 이용한 물체 형상 인식)
 ![animation](https://github.com/chihoon05/OSS_new/assets/166050709/d83b2b62-77c6-4359-8734-689243532639)
+
 1단계 : 적응형 범위 분할
 각 범위 데이터와 가장 가까운 범위 데이터 사이의 거리를 계산하고, 이 거리가 센서로부터의 거리에 비례한 특정 임계값 미만이면 동일한 클러스터에 있는 것으로 판단합니다.
 
